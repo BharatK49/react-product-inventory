@@ -1,0 +1,121 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* Section headings */
+h1 {
+  font-size: 1.5rem;
+  margin: 20px 0 10px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+/* === Product Inventory Table === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f1f1f1;
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Category row styling */
+th[colspan="2"] {
+  background-color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding-top: 15px;
+}
+
+/* Out-of-stock items */
+td[style*="color: red"] {
+  font-weight: bold;
+}
+
+/* Search form */
+form {
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  padding: 6px 8px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* === List Renderer === */
+.list-container {
+  display: inline-block;
+  background-color: #b3e0ff;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 5px;
+  min-width: 150px;
+  text-align: center;
+}
+
+.list-container h3 {
+  background-color: #00aaff;
+  color: white;
+  padding: 5px;
+  margin: -10px -10px 10px -10px;
+  border-radius: 6px 6px 0 0;
+}
+
+.list-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-container li {
+  padding: 4px 0;
+}
+
+/* === Animal Cards === */
+.animals-wrapper {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.animal-card {
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  padding: 10px;
+  width: 180px;
+  background: white;
+}
+
+.animal-card h3 {
+  margin-top: 0;
+}
+
+.animal-card em {
+  color: #666;
+}
